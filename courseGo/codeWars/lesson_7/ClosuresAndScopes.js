@@ -30,7 +30,6 @@
  callbacks[3](); // must return 3
  */
 
-
 function createFunctions(n) {
     var callbacks = [];
     var i;
