@@ -3,7 +3,7 @@
  */
 
 function Machine(power) {
-    this._power = power;
+    this.__power = power;
     this.__enabled = false;
     this.enable = function () {
         this.__enabled = true;
@@ -27,16 +27,16 @@ function VintageCoffeeMachine() {
     CoffeeMachine.apply(this, arguments);
 
     this.color = 'brown';
-    this._pedal = 'up';
+    this.__pedal = 'up';
 
     this.setPedalStatus = function (direction) {
         if (direction === 'up' || direction === 'down') {
-            this._pedal = direction;
+            this.__pedal = direction;
         }
     };
 
     this.getPedalStatus = function () {
-        return 'Состояние педали: ' + this._pedal;
+        return 'Состояние педали: ' + this.__pedal;
     };
 }
 
@@ -44,7 +44,7 @@ function Fridge(power) {
     Machine.apply(this, arguments);
 
     this.getSettings = function () {
-        console.log('Я холодильник мощностью ' + this._power + ' Состояние: ' + this.__enabled)
+        console.log('Я холодильник мощностью ' + this.__power + ' Состояние: ' + this.__enabled)
     }
 }
 
