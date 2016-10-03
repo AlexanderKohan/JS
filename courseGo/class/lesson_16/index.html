@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class16</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Title</h1>
+
+<p>She travelling acceptance men unpleasant her especially entreaties law. Law forth but end any arise chief arose. Old
+    her say learn these large. Joy fond many ham high seen this. Few preferred continual sir led incommode neglected.
+    Discovered too old insensible collecting unpleasant but invitation.
+</p>
+
+<ul>
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+    <li>Item5</li>
+</ul>
+
+<ul>
+    <li><a href="#" onclick="bodyStyle.backgroundColor = '#eee';
+    bodyStyle.color = '#333';">Item1</a></li>
+    <li><a href="#" onclick="bodyStyle.backgroundColor = '#eea';
+    bodyStyle.color = '#888';" >Item2</a></li>
+    <li><a href="#" onclick="alert('Hello')">Item3</a></li>
+    <li><a href="#" onclick="superHello()">Item4</a></li>
+    <li><a href="#">Item5</a></li>
+</ul>
+
+<script>
+    var bodyStyle = document.body.style;
+//
+//    bodyStyle.backgroundColor = '#eee';
+//    bodyStyle.color = '#333';
+//
+//    var li = document.body.children[2].children[1];
+//    li.style.backgroundColor = '#333';
+//    li.style.color = '#eee';
+
+    function superHello() {
+        bodyStyle.backgroundColor = '#333';
+        bodyStyle.color='#038';
+        alert('Super Hello');
+    }
+
+</script>
+
+</body>
+</html>
